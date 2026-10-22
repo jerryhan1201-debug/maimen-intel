@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦门情报站 · 2026-10-22 公开简报</title>
+<style>
+:root {
+  --paper: #faf5ea;
+  --paper-deep: #f3ecdb;
+  --ink: #33302b;
+  --ink-soft: #6b6459;
+  --red: #c62f22;
+  --red-deep: #a52418;
+  --yellow: #f4b400;
+  --rule: #d8cfba;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper-deep); color: var(--ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.65;
+}
+.page {
+  max-width: 880px; margin: 24px auto; background: var(--paper);
+  border: 1px solid var(--rule); box-shadow: 0 2px 14px rgba(60, 45, 20, .08);
+  padding: 40px 44px 28px;
+}
+.masthead { text-align: center; border-bottom: 3px double var(--ink); padding-bottom: 18px; }
+.masthead .brand {
+  font-size: 44px; font-weight: 800; letter-spacing: 6px; color: var(--red);
+  margin: 0;
+}
+.masthead .brand .dot { color: var(--yellow); }
+.masthead .meta { color: var(--ink-soft); font-size: 13px; margin-top: 8px; }
+.badge {
+  display: inline-block; padding: 1px 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 700; vertical-align: middle;
+}
+.badge.mode-demo { background: var(--yellow); color: #4a3200; }
+.badge.mode-live { background: var(--red); color: #fff; }
+.badge.scope { border: 1px solid var(--ink-soft); color: var(--ink-soft); }
+.disclaimer {
+  margin: 14px 0 0; font-size: 12px; color: var(--ink-soft);
+  background: var(--paper-deep); border-left: 3px solid var(--yellow);
+  padding: 6px 10px; text-align: left;
+}
+nav.toc {
+  display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: center;
+  border-bottom: 1px solid var(--rule); padding: 12px 0; font-size: 14px;
+}
+nav.toc a { color: var(--red); text-decoration: none; border-bottom: 1px dotted var(--red); }
+nav.toc a:hover { color: var(--red-deep); }
+.filters {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px;
+}
+.filters button {
+  font: inherit; font-size: 13px; cursor: pointer;
+  border: 1px solid var(--rule); background: #fff; color: var(--ink);
+  padding: 4px 14px; border-radius: 999px;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.filters button:hover { border-color: var(--red); color: var(--red); }
+.filters button.active {
+  background: var(--red); border-color: var(--red); color: #fff;
+}
+section { margin-top: 26px; }
+h2.section-title {
+  font-size: 20px; margin: 0 0 4px; padding-bottom: 6px;
+  border-bottom: 2px solid var(--ink); letter-spacing: 2px;
+}
+h2.section-title .count { font-size: 13px; color: var(--ink-soft); font-weight: 400; margin-left: 8px; }
+.article {
+  border-bottom: 1px solid var(--rule); padding: 14px 2px;
+}
+.article:last-child { border-bottom: none; }
+.article h3 {
+  margin: 0 0 4px; font-size: 17px; line-height: 1.4; word-break: break-word;
+}
+.new-badge {
+  display: inline-block; background: var(--red); color: #fff;
+  font-size: 11px; font-weight: 700; border-radius: 3px;
+  padding: 0 6px; margin-left: 6px; vertical-align: 2px;
+}
+.date-line { font-size: 13px; color: var(--red-deep); font-weight: 600; }
+.date-line.uncertain { color: #8a6d00; }
+.summary { margin: 6px 0 0; font-size: 14.5px; }
+details.conditions { margin-top: 6px; font-size: 13.5px; }
+details.conditions summary {
+  cursor: pointer; color: var(--red); list-style: none; user-select: none;
+}
+details.conditions summary::before { content: "▸ "; }
+details.conditions[open] summary::before { content: "▾ "; }
+details.conditions ul { margin: 6px 0 0; padding-left: 20px; color: var(--ink-soft); }
+.empty-note, .error-note, .unknown-note {
+  font-size: 14px; padding: 8px 12px; margin: 8px 0;
+}
+.empty-note { color: var(--ink-soft); }
+.error-note { background: #fbe7e4; border-left: 3px solid var(--red); color: var(--red-deep); }
+.unknown-note { background: #fdf3d7; border-left: 3px solid var(--yellow); color: #7a5c00; }
+ul.simple { padding-left: 20px; margin: 8px 0; }
+.personal h2.section-title { border-bottom-color: var(--red); }
+footer {
+  margin-top: 34px; border-top: 3px double var(--ink); padding-top: 12px;
+  font-size: 12px; color: var(--ink-soft); text-align: center;
+}
+footer a { color: var(--red); }
+@media (max-width: 640px) {
+  .page { margin: 0; padding: 22px 16px; border: none; }
+  .masthead .brand { font-size: 32px; letter-spacing: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <h1 class="brand">麦门情报站<span class="dot">·</span></h1>
+    <div class="meta">2026 年 10 月 22 日 · <span class="badge mode-demo">DEMO · 虚构演示数据</span> <span class="badge scope">公开版</span><br>数据来源：内置虚构演示数据 · 生成于 2026-10-22 21:46:21</div>
+    <p class="disclaimer">本页面由开源工具「麦门情报站」生成，<strong>非麦当劳官方产品</strong>；活动、价格与供应状态以麦当劳官方渠道的实时结果为准。</p>
+  </header>
+  <nav class="toc"><a href="#sec-ongoing">今日进行中 1</a>
+<a href="#sec-ending_soon">即将结束 1</a>
+<a href="#sec-upcoming">即将开始 2</a>
+<a href="#sec-unverified">日期待核实 1</a><a href="#sec-guide">领取指引</a></nav>
+  <div class="filters" role="group" aria-label="活动筛选"><button data-filter="all" class="active">全部</button><button data-filter="ongoing">今日进行中</button><button data-filter="ending_soon">即将结束</button><button data-filter="upcoming">即将开始</button><button data-filter="unverified">日期待核实</button></div>
+  <section id="sec-ongoing"><h2 class="section-title">今日进行中<span class="count">1 项</span></h2>
+<article class="article" data-category="ongoing">
+<h3>【示例】麦麦会员日：经典小食第二份半价</h3>
+<div class="date-line">2026-10-16 至 2026-10-30</div>
+<p class="summary">会员日到店或麦乐送下单，指定经典小食享第二份半价。</p>
+<details class="conditions"><summary>使用条件（3 条）</summary><ul><li>每单限享一次</li><li>不与其他优惠同享</li><li>部分门店不参与</li></ul></details>
+</article>
+</section>
+<section id="sec-ending_soon"><h2 class="section-title">即将结束<span class="count">1 项</span></h2>
+<article class="article" data-category="ending_soon">
+<h3>【示例】早餐满减周：满 20 减 5</h3>
+<div class="date-line">2026-10-10 至 2026-10-24</div>
+<p class="summary">早餐时段指定组合满 20 元立减 5 元。</p>
+<details class="conditions"><summary>使用条件（2 条）</summary><ul><li>仅限早餐时段（10:30 前）</li><li>每单限用一次</li></ul></details>
+</article>
+</section>
+<section id="sec-upcoming"><h2 class="section-title">即将开始<span class="count">2 项</span></h2>
+<article class="article" data-category="upcoming">
+<h3>【示例】季节限定派买一送一</h3>
+<div class="date-line">2026-10-26 至 2026-11-09</div>
+<p class="summary">新品季节限定派上市，活动期间买一送一。</p>
+<details class="conditions"><summary>使用条件（1 条）</summary><ul><li>数量有限，售完即止</li></ul></details>
+</article>
+<article class="article" data-category="upcoming">
+<h3>【示例】周末亲子派对报名</h3>
+<div class="date-line">2026-11-21 至 2026-12-06</div>
+<p class="summary">主题派对开放报名，含手工体验与套餐。</p>
+<details class="conditions"><summary>使用条件（2 条）</summary><ul><li>需提前预约门店与场次</li><li>名额有限</li></ul></details>
+</article>
+</section>
+<section id="sec-unverified"><h2 class="section-title">日期待核实<span class="count">1 项</span></h2>
+<article class="article" data-category="unverified">
+<h3>【示例】积分翻倍日</h3>
+<div class="date-line uncertain">日期待核实</div>
+<p class="summary">官方尚未公布具体日期，上线后会第一时间更新。</p>
+</article>
+</section>
+  
+  <section id="sec-guide"><h2 class="section-title">领取指引</h2><ul class="simple"><li>打开麦当劳 App / 小程序，进入「麦麦省」或「优惠券」页面领取。</li><li>部分活动需在 App 内点击「立即参与」或到店核销，以官方页面为准。</li></ul></section>
+  <footer>
+    <p>非麦当劳官方产品 · 仅供个人参考 · 源码：<a href="https://github.com/jerryhan1201-debug/maimen-intel">https://github.com/jerryhan1201-debug/maimen-intel</a></p>
+  </footer>
+</div>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filters button[data-filter]');
+  function apply(filter) {
+    document.querySelectorAll('[data-category]').forEach(function (el) {
+      el.style.display = (filter === 'all' || el.getAttribute('data-category') === filter)
+        ? '' : 'none';
+    });
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+    });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-filter')); });
+  });
+})();
+</script>
+</body>
+</html>

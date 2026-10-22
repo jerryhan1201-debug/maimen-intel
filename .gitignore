@@ -1,0 +1,26 @@
+# 凭证与环境
+.env
+.env.*
+*.pem
+*.key
+
+# 私有运行产物与状态（含个人券/积分/散列状态）
+outputs/
+state/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# 系统
+.DS_Store
+
+# 临时凭证/调试残留
+*.tmp
+*.log
+
+# WorkBuddy 本机上下文与记忆
+.workbuddy/
